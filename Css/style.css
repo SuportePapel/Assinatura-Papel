@@ -118,7 +118,7 @@ a{
     height: 80px;
     background-color: gray;
 }
-@media (min-width:360px){
+@media (max-width:360px){
 .form{
     display: flex;
     align-items: center;
