@@ -78,7 +78,7 @@ input::selection{
 .button:hover{
     border: 2px solid white
 }
-.h2{
+.h2{ 
     display: flex;
     justify-content: content;
     align-items: center;
