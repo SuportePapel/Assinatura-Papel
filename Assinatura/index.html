@@ -15,44 +15,68 @@
 <body>
 
     <main class="main">
-
-        <header class="header">        
+        <header class="header">
+            <img class="image" src="./Mailmkt/Branco web.png" alt="">
+            <div class="container-topo">
+                <div class="topo">
+                    <h1>Papel Plastico</h1>
+                </div>
+            </div>
         </header>
 
         <section class="section">
+            <div class="container">
 
-            <form class="form">
-                <div class="name">
-                    <label>Nome:</label>
-                    <input type="text" name="name" placeholder="Anderson Leonardo">
-                </div>
-                <div class="cargo">
-                    <label>Cargo</label>
-                    <input type="text" class="cargo" name="cargo" placeholder="Assistente de vendas jr"/>
-                </div>
-                <div class="celular">
-                    <label>Celular:</label>
-                    <input type="text" name="celular" placeholder="(11) 9555-5555">
-                </div>
-                <div class="ramal">
-                    <label>Ramal:</label>
-                    <input type="text" name="ramal" placeholder="7880">
-                </div>
-            </form>
+                <h2>Gerar Assinatura</h2>
 
-            <div class="assinatura">
-                <img src="#" alt="image">
-                <p class="nomeAlterar" name="nomeAlterar"></p>
-                <p class="cargoAlterar" name="cargoAlterar"></p>
-                <p>Endereço: Avenida Francisco Nakasato, 1355
-                    <br>
-                    Pacaembú I  – CEP: 13.295-458 – Itupeva - SP
-                </p>
-                <p><span class="cellAlterar" name="cellAlterar"></span> / <span class="ramalAlterar" name="ramalAlterar"></span></p>
-                <p> Conheça nossa Loja Virtual</p>
-                <a href="www.papelplasticoecia.com.br">www.papelplasticoecia.com.br</a>
+                <form class="form" name="form">
+                    <div class="name">
+                        <label>Nome:</label>
+                        <input type="text" name="name" placeholder="Julia Gabriela" required>
+                    </div>
+
+                    <div class="cargo">
+                        <label>Cargo:</label>
+                        <input type="text" name="cargo" placeholder="Assitente de vendas Jr" required>
+                    </div>
+
+                    <div class="celular">
+                        <label>Telefone:</label>
+                        <input type="text" name="celular" placeholder="4591-7800" required maxlength="9" minlength="9">
+                    </div>
+
+                    <div class="ramal">
+                        <label>Ramal:</label>
+                        <input type="text" name="ramal" placeholder="7880" required maxlength="4" minlength="4">
+                    </div>
+                    <button class="button" onsubmit="submit()">Criar Assinatura</button>
+                </form>        
+
             </div>
-
+            <div class="assinatura">
+                    <img src="./img/image2.png" alt="image" class="image">
+                <div class="dados">
+                    <p class="nomeAlterar" name="nomeAlterar"></p>
+                    <p class="cargoAlterar" name="cargoAlterar"></p>
+                    <p>Endereço: Avenida Francisco Nakasato, 1355
+                        <br>
+                        Pacaembú I  – CEP: 13.295-458 – Itupeva - SP
+                    </p>
+                    <p><span class="celularAlterar" name="celularAlterar"></span> / <span class="ramalAlterar" name="ramalAlterar"></span></p>
+                    <p> Conheça nossa Loja Virtual</p>
+                    <a href="www.papelplasticoecia.com.br">www.papelplasticoecia.com.br</a>
+                    <br>
+                    <a href="https://www.instagram.com/papelplasticoecia/?hl=pt-br"target="_blank">
+                        <img class="logo-assinatura" src="./img/Instagram.png" alt="">
+                    </a>
+                    <a href="https://www.facebook.com/papelplasticoeciaitupeva" target="_blank">
+                        <img class="logo-assinatura" src="./img/Facebook.png" alt="">
+                    </a>
+                    <a href="#">
+                        <img  class="logo-assinatura" src="./img/Linkedin.png" alt="" >
+                    </a>
+                </div>
+            </div>
         </section>
 
         <footer class="footer">
