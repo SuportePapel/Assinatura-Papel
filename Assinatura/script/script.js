@@ -1,5 +1,7 @@
 const form = document.querySelector(".form")
-let div = document.querySelector(".assinatura")
+
+let display = document.querySelector(".assinatura")
+
 let inputName = document.querySelector("input[name = 'name']")
 let inputCargo = document.querySelector("input[name = 'cargo']")
 let inputCelular = document.querySelector("input[name = 'celular']")
@@ -12,13 +14,15 @@ let celularAlterar = document.querySelector("span[name = 'celularAlterar']")
 let ramalAlterar = document.querySelector("span[name = 'ramalAlterar']")
 
     form.addEventListener('submit', (event)=>{
+
         event.preventDefault()
+
         adicionarNome()
         adicionarCargo()
         adicionarCelular()
         adicionarRamal()
+        mostrarAssinatura()
     })
-
 function adicionarNome(){
     nomeAlterar.innerHTML= inputName.value
     inputName.value = ''
@@ -34,4 +38,7 @@ function adicionarCelular(){
 function adicionarRamal (){
     ramalAlterar.innerHTML = `${"Ramal:"} ${""} ${inputRamal.value}`
     inputRamal.value = ''
+}
+function mostrarAssinatura (){
+    display.style.display = 'flex'
 }
