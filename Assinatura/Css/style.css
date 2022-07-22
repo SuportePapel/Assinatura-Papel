@@ -78,6 +78,13 @@ input::selection{
 .button:hover{
     border: 2px solid white
 }
+.h2{
+    display: flex;
+    justify-content: content;
+    align-items: center;
+    display: none;
+    margin: auto;
+}
 .assinatura{
     width: auto;
     height: 250px;

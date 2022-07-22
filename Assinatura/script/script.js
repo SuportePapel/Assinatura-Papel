@@ -1,6 +1,7 @@
 const form = document.querySelector(".form")
 
 let display = document.querySelector(".assinatura")
+let displayH2 = document.querySelector(".h2")
 
 let inputName = document.querySelector("input[name = 'name']")
 let inputCargo = document.querySelector("input[name = 'cargo']")
@@ -41,4 +42,5 @@ function adicionarRamal (){
 }
 function mostrarAssinatura (){
     display.style.display = 'flex'
+    displayH2.style.display= 'flex'
 }
