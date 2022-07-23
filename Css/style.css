@@ -9,7 +9,7 @@
     min-height: 100vh;
 }
 .header{
-    width: 100%;
+    width: 100vh;
     height: 130px;
     background-color: #444;
     display: flex;
