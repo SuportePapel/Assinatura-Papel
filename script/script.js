@@ -34,7 +34,9 @@ function adicionarCargo (){
 }
 function adicionarCelular(){
     celularAlterar.innerHTML = `${"Tel.: 55 11"} ${""} ${inputCelular.value}`
-    inputCelular.value = ''
+    let  array = [inputCelular.value[0], inputCelular.value[1], inputCelular.value[2], inputCelular.value[3],
+                  inputCelular.value[4], inputCelular.value[5], inputCelular.value[6], inputCelular.value[7]]
+    inputCelular.value = '' 
 }
 function adicionarRamal (){
     ramalAlterar.innerHTML = `${"Ramal:"} ${""} ${inputRamal.value}`
@@ -44,3 +46,4 @@ function mostrarAssinatura (){
     display.style.display = 'flex'
     displayH2.style.display= 'flex'
 }
+
