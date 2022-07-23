@@ -145,3 +145,10 @@ a{
     display: none;
     align-items: center;
 }
+.container-topo{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
