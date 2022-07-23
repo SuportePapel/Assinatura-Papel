@@ -130,3 +130,18 @@ a{
     border: 2px solid black;
     border-radius: 7px;
 }
+.assinatura{
+    width: 400px;
+    height: 250px;
+    padding: 5px;
+    gap: 15px;
+    display: flex;
+    justify-content: center;
+    margin: auto auto 25px auto;
+    border-radius: 7px;
+    flex-wrap: wrap;
+    color: black;
+    border: 2px solid black;
+    display: none;
+    align-items: center;
+}
