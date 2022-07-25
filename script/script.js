@@ -35,7 +35,7 @@ function adicionarCargo (){
 function adicionarCelular(){
     let  array = [`${inputCelular.value[0]}`+`${inputCelular.value[1]}`+ `${inputCelular.value[2]}`+`${inputCelular.value[3]}`+ `-`+`${inputCelular.value[4]}`+`${inputCelular.value[5]}`+`${inputCelular.value[6]}`+`${inputCelular.value[7]}`]
     console.log(array)
-    celularAlterar.innerHTML = `${"Tel.: 55 11"} ${""} ${array}`
+    celularAlterar.innerText = `${"Tel.: 55 11"} ${""} ${array}`
     console.log(array)
     inputCelular.value = '' 
 }

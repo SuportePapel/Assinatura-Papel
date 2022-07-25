@@ -100,16 +100,36 @@ input::selection{
     display: none;
     align-items: center;
 }
+.nomeAlterar{
+    color:red;
+    font-weight: bolder;
+    font-size: 17px;
+    font-family: Arial;
+}
+.imagem{
+  display: flex;
+    max-width: 350px;
+}
+.cargoAlterar{
+    font-family: Arial;
+}
+.bolder{
+    font-weight: bolder;
+}
+.conhecaloja{
+    color: red;
+}
 a{
     text-decoration: underline;
     color: blue;
 }
 .link-image{
-    text-decoration: none;    
+    text-decoration: none;   
 }
 .image{
     height: 150px;
     float: left;
+    text-decoration: none;
 }
 .logo-assinatura{
     height: 40px;
