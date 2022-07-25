@@ -21,9 +21,8 @@
 .container-topo{
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    margin-left: -150px ;
 }
 .section{
     display: flex;
@@ -86,10 +85,8 @@ input::selection{
     margin: auto;
 }
 .assinatura{
-    width: auto;
-    height: 250px;
     padding: 5px;
-    gap: 15px;
+    gap:15px;
     display: flex;
     justify-content: center;
     margin: auto auto 25px auto;
@@ -104,14 +101,10 @@ input::selection{
     color:red;
     font-weight: bolder;
     font-size: 17px;
-    font-family: Arial;
-}
-.imagem{
-  display: flex;
-    max-width: 350px;
+    font-family: Arial, sans-serif;  
 }
 .cargoAlterar{
-    font-family: Arial;
+    font-family: Arial, sans-serif;
 }
 .bolder{
     font-weight: bolder;
@@ -120,19 +113,38 @@ input::selection{
     color: red;
 }
 a{
+    font-family: Arial, sans-serif;
     text-decoration: underline;
     color: blue;
+    font-weight: bold;
 }
 .link-image{
-    text-decoration: none;   
+    text-decoration: none;  
+    color:white
+}
+.dados{
+    margin-left: 10px;
+    font-size: 13PX;
+    color: rgb(77, 77, 77);
 }
 .image{
     height: 150px;
     float: left;
     text-decoration: none;
+    margin-right: 10px;
 }
+.imagem{
+    display: flex;
+      max-width: 350px;
+      margin-top: 5px ;
+  }
 .logo-assinatura{
+    margin: 3px auto auto auto;
     height: 40px;
+}
+.message{
+    max-width: 1000px;
+    font-family: Arial, sans-serif;
 }
 .footer{
     height: 80px;
