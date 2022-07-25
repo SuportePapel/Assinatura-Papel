@@ -47,4 +47,3 @@ function mostrarAssinatura (){
     display.style.display = 'flex'
     displayH2.style.display= 'flex'
 }
-
