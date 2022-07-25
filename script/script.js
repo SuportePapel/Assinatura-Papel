@@ -14,6 +14,9 @@ let cargoAlterar = document.querySelector("p[name = 'cargoAlterar']")
 let celularAlterar = document.querySelector("span[name = 'celularAlterar']")
 let ramalAlterar = document.querySelector("span[name = 'ramalAlterar']")
 
+function novajanela(){
+     window.open("../passos/index.html")
+}
     form.addEventListener('submit', (event)=>{
 
         event.preventDefault()
