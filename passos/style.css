@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header{
+    border: 1px solid black;
+    display: flex;
+    height: 83px;
+}
+.section{
+    display: flex;
+    justify-content: space-around;
+}
+.passo{
+    width: 400px ;
+    height: 550px;
+    margin: 25px;
+    border: 2px solid black;
+    border-radius: 10px;
+    position: relative;
+}
+.footer{
+    height: 100px;
+    border: 1px solid black;
+    display: flex;
+    height: 70px;
+}
+h1{
+    text-align: center;
+    padding: 3px;
+}
+.image{
+    height: 400px;
+    width: 350px;
+    margin-left: 20px;
+}
+.caminho{
+    margin-left: 35px;
+}
+li{
+    font-size: 18px;
+}
