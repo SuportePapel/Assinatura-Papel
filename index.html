@@ -1,97 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link class="icon" rel="icon" href=" https://papelplasticoecia.com.br/img/store/logo.png?1">
-    <!---->
+    <link rel="icon" href="./logo/Logo-Padrão-Vermelho PNG.png">
     
-    <script defer src="./script/script.js"></script>
-    <link rel="stylesheet" href="./Css/style.css">
+    <link rel="stylesheet" href="./Estilo/style.css">
+    <script defer src="./script/script.js">
+    </script>
     <title>Assinatura</title>
-
 </head>
+
 <body>
 
-    <main class="main">
-        <header class="header">
-            <!---->
-            <div class="container-topo">
-                <img class="image-topo" src="./Mailmkt/Branco web.png" alt="">
-                    <h1 class="h1">Assinatura</h1>
-                    <button class="button align" onclick="novajanela()">Passo a passo</button>
+    <header class="header">
+        <div class="container-topo">
+            <img class="image" src="./Mailmkt/Branco web.png" alt="">
+            <h1 class="h1">Assinatura</h1>
+            <button class="button button-top" onclick="novajanela()">Passo a passo</button>
+        </div>
+    </header>
+    <section class="section">
+        <h2 class="messageGerarAssinatura">Gerar Assinatura</h2>
+        <form class="form">
+            <div class="mini-container">
+                <label class="label">Nome:</label>
+                <input class="input" type="text" name="name" placeholder="Anderson Leonardo" required>
             </div>
-        </header>
-
-        <section class="section">
-            <div class="container">
-
-                <h2>Gerar Assinatura</h2>
-
-                <form class="form" name="form">
-                    <div class="name">
-                        <label>Nome:</label>
-                        <input type="text" name="name" placeholder="Anderson Leonardo" required>
-                    </div>
-
-                    <div class="cargo">
-                        <label>Cargo:</label>
-                        <input type="text" name="cargo" placeholder="Auxiliar de Informatica" required>
-                    </div>
-
-                    <div class="celular">
-                        <label>Telefone:</label>
-                        <input type="text" name="celular" placeholder="45917800" required maxlength="8" minlength="8">
-                    </div>
-
-                    <div class="ramal">
-                        <label>Ramal:</label>
-                        <input type="text" name="ramal" placeholder="7880" required maxlength="4" minlength="4">
-                    </div>
-                    <button class="button" onsubmit="submit()">Criar Assinatura</button>
-                </form>        
-
+            <div class="mini-container">
+                <label class="label">Cargo:</label>
+                <input class="input" type="text" name="cargo" placeholder="Auxiliar de Informatica" required >
             </div>
-            <h2 class="h2">Assinatura</h2>
-            <div class="assinatura">
-                    <img src="./img/image2.png" alt="image" class="image">
-                <div class="dados">
-                    <p class="nomeAlterar" name="nomeAlterar"></p>
-                    <p class="cargoAlterar" name="cargoAlterar"></p>
-                    <p !mportant class="bolder">Endereço: Avenida Francisco Nakasato, 1355
-                        <br>
-                        Pacaembú I  – CEP: 13.295-458 – Itupeva - SP
-                    </p>
-                    <p><span class="celularAlterar, bolder" name="celularAlterar"></span> / <span class="ramalAlterar, bolder" name="ramalAlterar"></span></p>
-                    <p class="conhecaloja"> Conheça nossa Loja Virtual</p>
-                    <a href="https://papelplasticoecia.com.br/">www.papelplasticoecia.com.br</a>
+            <div class="mini-container">
+                <label class="label">Tel:</label>
+                <input class="input" type="text" name="tel" placeholder="45917800" maxlength="8" minlength="8" required >
+            </div> 
+            <div class="mini-container">
+                <label class="label">Ramal:</label>
+                <input class="input" type="text" name="ramal" placeholder="7880" required>
+            </div>
+            <button class="button buttonForm" onsubmit="submit()">Criar Assinatura</button>
+        </form>
+        <div class="textoUpAssinatura">
+            <h2 class="messageAssinatura">Assinatura</h2>
+            <p class="messageDeCopie">(obs: copie a assinatura abaixo)</p>
+        </div>
+        <div class="assinatura">
+            <img src="./img/image2.png" alt="image" class="image-assinatura">
+            <div class="dados">
+                <p class="adicionarNome" name="adicionarNome"></p>
+                <p class="adicionarCargo" name="adicionarCargo"></p>
+                <p  class="endereco-tel">Endereço: Avenida Francisco Nakasato, 1355
                     <br>
-                    <img class="imagem" src="./img/image002.png" alt="">
-
-                    <a class="link-image" href="https://www.instagram.com/papelplasticoecia/?hl=pt-br"target="_blank">
-                        <img class="logo-assinatura" src="./img/Instagram.png" alt="">
-                    </a>
-                    <a class="link-image" href="https://www.facebook.com/papelplasticoeciaitupeva" target="_blank">
-                        <img class="logo-assinatura" src="./img/Facebook.png" alt="">
-                    </a>
-                    <a class="link-image" href="https://www.linkedin.com/in/papel-pl%C3%A1stico-itupeva-ltda-15b6a1b5/">
-                        <img  class="logo-assinatura" src="./img/Linkedin.png" alt="" >
-                    </a>
-                    <div class="message">
-                        <p class="messagem">OBS: Esta mensagem, incluindo seus anexos, é destinada exclusivamente a(s) pessoa(s) a quem é dirigida, podendo conter informação confidencial e/ou privilegiada. Caso não seja
-                        destinatário pretendido, está totalmente proibido a divulgação dessas informações. Caso tenha recebido a mensagem por engano, favor avise-nos imediatamente por e-mail ou telefone.</p>
-                    </div>
+                    Pacaembú I – CEP: 13.295-458 – Itupeva - SP
+                </p>
+                <p class="endereco-tel"><span class="adicionarTelefone" name="adicionarTelefone"></span> / <span
+                        class="adicionarRamal" name="adicionarRamal"></span></p>
+                <p class="nossaLoja"> Conheça nossa Loja Virtual:</p>
+                <a class="link-papel" href="https://papelplasticoecia.com.br/" target="_blank">www.papelplasticoecia.com.br</a>
+                <br>
+                <div class="container">
+                    <img class="imagem-risco" src="./img/image002.png" alt="">
+                </div>
+                    <a class="link-social" href="https://www.instagram.com/papelplasticoecia/?hl=pt-br" target="_blank">
+                    <img class="logo-assinatura" src="./img/Instagram.png" alt="">
+                </a>
+                <a class="link-social" href="https://www.facebook.com/papelplasticoeciaitupeva" target="_blank">
+                    <img class="logo-assinatura" src="./img/Facebook.png" alt="">
+                </a>
+                <a class="link-social" href="https://www.linkedin.com/in/papel-pl%C3%A1stico-itupeva-ltda-15b6a1b5/" target="_blank">
+                    <img class="logo-assinatura" src="./img/Linkedin.png" alt="">
+                </a>
+                <div class="message">
+                    <p>OBS: Esta mensagem, incluindo seus anexos, é destinada exclusivamente a(s)
+                        pessoa(s) a quem é dirigida, podendo conter informação confidencial e/ou privilegiada. Caso não
+                        seja
+                        destinatário pretendido, está totalmente proibido a divulgação dessas informações. Caso tenha
+                        recebido a mensagem por engano, favor avise-nos imediatamente por e-mail ou telefone.</p>
                 </div>
             </div>
-        </section>
-
-        <footer class="footer">
-        </footer>
-
-    </main>
-
+    </section>
+    <footer class="footer">
+        <p style="font-size: 13px;">Anderson Leonardo S. Castilho <span style="font-family: fantasy;">&copy;</span></p>
+    </footer>
 </body>
 </html>
-

@@ -1,52 +1,50 @@
 const form = document.querySelector(".form")
 
 let display = document.querySelector(".assinatura")
-let displayH2 = document.querySelector(".h2")
+let textoUpAssinatura = document.querySelector(".textoUpAssinatura")
 
 let inputName = document.querySelector("input[name = 'name']")
 let inputCargo = document.querySelector("input[name = 'cargo']")
-let inputCelular = document.querySelector("input[name = 'celular']")
+let inputTel = document.querySelector("input[name = 'tel']")
 let inputRamal = document.querySelector("input[name = 'ramal']")
 
 
-let nomeAlterar = document.querySelector("p[name = 'nomeAlterar']")
-let cargoAlterar = document.querySelector("p[name = 'cargoAlterar']")
-let celularAlterar = document.querySelector("span[name = 'celularAlterar']")
-let ramalAlterar = document.querySelector("span[name = 'ramalAlterar']")
+let adicionarNome = document.querySelector("p[name = 'adicionarNome']")
+let adicionarCargo = document.querySelector("p[name = 'adicionarCargo']")
+let adicionarTelefone = document.querySelector("span[name = 'adicionarTelefone']")
+let adicionarRamal = document.querySelector("span[name = 'adicionarRamal']")
 
 function novajanela(){
-     window.open("../passos/index.html")
+     window.open("https://leosilvacasti.github.io/passo-passo/")
 }
     form.addEventListener('submit', (event)=>{
 
         event.preventDefault()
 
-        adicionarNome()
-        adicionarCargo()
-        adicionarCelular()
-        adicionarRamal()
+        addnome()
+        addcargo()
+        addtelefone()
+        addramal()
         mostrarAssinatura()
     })
-function adicionarNome(){
-    nomeAlterar.innerHTML= inputName.value
+function addnome(){
+    adicionarNome.innerHTML= inputName.value
     inputName.value = ''
 }
-function adicionarCargo (){
-    cargoAlterar.innerHTML = inputCargo.value
+function addcargo (){
+    adicionarCargo.innerHTML = inputCargo.value
     inputCargo.value = ''
 }
-function adicionarCelular(){
-    let  array = [`${inputCelular.value[0]}`+`${inputCelular.value[1]}`+ `${inputCelular.value[2]}`+`${inputCelular.value[3]}`+ `-`+`${inputCelular.value[4]}`+`${inputCelular.value[5]}`+`${inputCelular.value[6]}`+`${inputCelular.value[7]}`]
-    console.log(array)
-    celularAlterar.innerText = `${"Tel.: 55 11"} ${""} ${array}`
-    console.log(array)
-    inputCelular.value = '' 
+function addtelefone(){
+    let  array = [`${inputTel.value[0]}`+`${inputTel.value[1]}`+ `${inputTel.value[2]}`+`${inputTel.value[3]}`+ `-`+`${inputTel.value[4]}`+`${inputTel.value[5]}`+`${inputTel.value[6]}`+`${inputTel.value[7]}`]
+    adicionarTelefone.innerText = `${"Tel.: 55 11"} ${""} ${array}`
+    inputTel.value = ''
 }
-function adicionarRamal (){
-    ramalAlterar.innerHTML = `${"Ramal:"} ${""} ${inputRamal.value}`
+function addramal (){
+    adicionarRamal.innerHTML = `${"Ramal:"} ${""} ${inputRamal.value}`
     inputRamal.value = ''
 }
 function mostrarAssinatura (){
     display.style.display = 'flex'
-    displayH2.style.display= 'flex'
+    textoUpAssinatura.style.display= 'flex'
 }

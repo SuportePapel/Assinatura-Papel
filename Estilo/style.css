@@ -1,0 +1,194 @@
+*{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        
+    }
+    .container-topo {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #444;
+    }
+    .h1{
+        background-image: linear-gradient(to bottom, rgb(255, 0, 0), rgb(255, 255, 255));
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    .button-top{
+        margin-right:  25px;
+    }
+    .messageGerarAssinatura{
+        text-align: center;
+        display: flex;
+    }
+    .section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        flex: 1 0 auto;
+    }
+    .image {
+        height: 120px;
+        padding: 3px;
+    }
+    .form {
+        width: 25%;
+        height: 400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+        border: 2px solid black;
+        border-radius: 7px;
+        background: linear-gradient(to bottom, white, red);
+        box-shadow:6px 5px 0 #4d4d4d, 11px 10px 0 #222 ;
+    }
+    .button {
+        padding: 5px;
+        font-weight: 600;
+        color: black;
+        background-color: rgb(168, 165, 165);
+        box-shadow: -2px 3px 0 #222, -4px 6px 0 #000;
+        border-radius: 5px;
+    }
+    .button:active{
+        box-shadow: inset -4px 4px 0 #222;
+        font-size: 0.9rem;
+    }
+    .button:hover{
+        border: 2px solid white
+    }
+    .assinatura{
+        padding: 5px;
+        display: flex;
+        justify-content: center;
+        margin: auto auto 25px auto;
+        border-radius: 7px;
+        border: 2px solid black;
+        flex-wrap: nowrap;
+        align-items: center;
+        display: none;
+    }
+    .textoUpAssinatura{ 
+        display: none;
+        justify-content: space-evenly;
+        flex-direction: column;
+    }
+    .messageDeCopie{
+        color: rgb(184, 0, 0);
+        font-size: 18px;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    .messageAssinatura{
+        margin: auto;
+    }
+    .adicionarNome{
+        color: red;
+        font-weight: bold;
+        font-size: 14px;
+        font-family: Calibri, Arial, Helvetica, sans-serif;
+        padding: auto;
+    }
+    .adicionarCargo{
+        padding: auto;
+        font-size: 13px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #4d4d4d;
+    }
+    .endereco-tel{
+        color: #4d4d4d;
+        line-height: normal;
+        font-family: arial;
+        font-weight: bold;
+        font-size: 11px;
+    }
+    .nossaLoja{
+        font-weight: 700;
+        font-size: 11px;
+        line-height: normal;
+        font-family: Arial;
+        color: #ff0000;
+    }
+    .link-papel{
+        font-size: 12px;
+        color: #0000FF;
+        font-family: Arial, sans-serif;
+    }
+    .message{
+        max-width: 1000px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 12px;
+        color: rgb(77, 77, 77);
+        font-weight: 400;
+    }
+    .image-assinatura{
+        height: 150px;
+        float:left;
+        margin-right: 10px;
+        margin-bottom: auto;
+    }
+    .container{
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-end;
+    }
+    .imagem-risco{
+        justify-content: flex-start;
+        display: flex;
+        max-width: 350px;
+        margin-top: 5px ;
+    }
+    .logo-assinatura{
+        margin: 3px auto auto auto;
+        max-height: 40px;
+        height: 40px;
+    }
+    .link-social{
+        text-decoration: underline;
+        color: white;
+    }
+    .mini-container {
+        margin: 15px;
+    }
+    .label {
+        font-weight: 500;
+        color:black;
+        font-size: 20px;
+        font-family:Arial, Helvetica, sans-serif;
+    }
+    .input{
+        padding: 5px;
+        border-radius: 5px;
+        border-color: transparent;
+        background-color: white;
+        
+    }
+    .input:hover{
+        border-color: #4d4d4d;
+    }
+    .input::placeholder{
+        color: rgb(129, 129, 129);
+    }
+    .footer{
+        height: 65px;
+        background-color: darkgray;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        color: inherit;
+    }
+@media (max-width: 1069px) {
+    .form{
+        width: auto;
+    }
+}
