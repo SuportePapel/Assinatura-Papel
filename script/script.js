@@ -1,7 +1,8 @@
-const form = document.querySelector(".form")
-
-let display = document.querySelector(".assinatura")
-let textoUpAssinatura = document.querySelector(".textoUpAssinatura")
+let h2 = document.querySelector(".h2")
+let form = document.querySelector(".form")
+let assinatura = document.querySelector(".assinatura")
+let section = document.querySelector(".section")
+let lastSection = document.querySelector(".last-section")
 
 let inputName = document.querySelector("input[name = 'name']")
 let inputCargo = document.querySelector("input[name = 'cargo']")
@@ -14,18 +15,15 @@ let adicionarCargo = document.querySelector("p[name = 'adicionarCargo']")
 let adicionarTelefone = document.querySelector("span[name = 'adicionarTelefone']")
 let adicionarRamal = document.querySelector("span[name = 'adicionarRamal']")
 
-function novajanela(){
-     window.open("https://leosilvacasti.github.io/passo-passo/")
-}
     form.addEventListener('submit', (event)=>{
-
         event.preventDefault()
-
         addnome()
         addcargo()
         addtelefone()
         addramal()
         mostrarAssinatura()
+        ocultarForm()
+        mostraPassos()
     })
 function addnome(){
     adicionarNome.innerHTML= inputName.value
@@ -45,6 +43,12 @@ function addramal (){
     inputRamal.value = ''
 }
 function mostrarAssinatura (){
-    display.style.display = 'flex'
-    textoUpAssinatura.style.display= 'flex'
+    assinatura.style.display = 'flex'
+}
+function ocultarForm(){
+    section.style.display= 'none'
+    h2.style.display = 'none'
+}
+function mostraPassos(){
+    lastSection.style.display = 'grid'
 }

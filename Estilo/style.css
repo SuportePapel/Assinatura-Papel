@@ -3,44 +3,40 @@
         padding: 0;
         box-sizing: border-box;
     }
-    body{
+    .container{
         display: flex;
         flex-direction: column;
         min-height: 100vh;
         background: linear-gradient(to right, #94ccdb, #90abda );
         
     }
-    .container-topo {
+    .header{
         width: 100%;
         display: flex;
-        justify-content: space-between;
-        align-items: center;
         background: rgb(233, 61, 61);
+        height: 80px;
+    }
+    .image {
+        height: 90px;
+        padding: 3px;
     }
     .h1{
+        margin: auto;
+        align-items: center;
         background: linear-gradient( to right, rgb(127, 224, 248), white);
         background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
-    .button-top{
-        margin-right:  25px;
-    }
-    .messageGerarAssinatura{
-        margin-bottom: 13px;
-        text-align: center;
-        display: flex;
-    }
     .section {
         display: flex;
-        justify-content: center;
         align-items: center;
         flex-direction: column;
-        flex: 1 0 auto;
+        padding: 16px;
     }
-    .image {
-        height: 90px;
-        padding: 3px;
+    .h2{
+        text-align: center;
+        padding: 10px;
     }
     .form {
         width: 25%;
@@ -53,7 +49,6 @@
         border: 2px solid black;
         border-radius: 7px;
         background: linear-gradient(to bottom, white, red);
-        box-shadow:6px 5px 3px #636363, 11px 10px 3px #222 ;
         -webkit-transform: translateY(0);
         -moz-transform: translateY(0);
         -ms-transform: translateY(0);
@@ -65,11 +60,33 @@
         transition: 0.5s;
     }
     .form:hover{
+        box-shadow:6px 5px 3px #636363, 11px 10px 3px #222 ;
         -webkit-transform: translateY(-8px);
         -moz-transform: translateY(-8px);
         -ms-transform: translateY(-8px);
         -o-transform: translateY(-8px);
         transform: translateY(-8px);
+    }
+    .container-input{
+        margin: 15px;
+    }
+    .label {
+        font-weight: 500;
+        color:black;
+        font-size: 20px;
+        font-family:Arial, Helvetica, sans-serif;
+    }
+    .input{
+        padding: 5px;
+        border-radius: 5px;
+        border-color: transparent;
+        background-color: white;
+    }
+    .input:hover{
+        border-color: #4d4d4d;
+    }
+    .input::placeholder{
+        color: rgb(129, 129, 129);
     }
     .button {
         padding: 5px;
@@ -90,7 +107,6 @@
         padding: 5px;
         display: flex;
         justify-content: center;
-        margin: auto auto 25px auto;
         border-radius: 7px;
         border: 2px solid black;
         flex-wrap: nowrap;
@@ -98,16 +114,11 @@
         display: none;
         background-color: white;
     }
-    .textoUpAssinatura{ 
-        display: none;
-        justify-content: space-evenly;
-        flex-direction: column;
-        padding: 10px;
-    }
-    .messageDeCopie{
-        color: rgb(184, 0, 0);
-        font-size: 21px;
-        font-family: fantasy;
+    .image-assinatura{
+        height: 150px;
+        float:left;
+        margin-right: 10px;
+        margin-bottom: auto;
     }
     .adicionarNome{
         color: red;
@@ -148,13 +159,7 @@
         color: rgb(77, 77, 77);
         font-weight: 400;
     }
-    .image-assinatura{
-        height: 150px;
-        float:left;
-        margin-right: 10px;
-        margin-bottom: auto;
-    }
-    .container{
+    .container-Image-risco{
         display: flex;
         justify-content: flex-start;
         align-items: flex-end;
@@ -165,36 +170,26 @@
         max-width: 350px;
         margin-top: 5px ;
     }
+    .link-social{
+        text-decoration: underline;
+        color: transparent;
+    }
     .logo-assinatura{
         margin: 3px auto auto auto;
         max-height: 40px;
         height: 40px;
     }
-    .link-social{
-        text-decoration: underline;
-        color: transparent;
+    .mid-section{
+        flex: 1 0 auto;
     }
-    .mini-container {
-        margin: 15px;
+    .last-section{
+        display: none;
+        grid-template-columns: repeat(4, 1fr);
     }
-    .label {
-        font-weight: 500;
-        color:black;
-        font-size: 20px;
-        font-family:Arial, Helvetica, sans-serif;
-    }
-    .input{
-        padding: 5px;
-        border-radius: 5px;
-        border-color: transparent;
-        background-color: white;
-        
-    }
-    .input:hover{
-        border-color: #4d4d4d;
-    }
-    .input::placeholder{
-        color: rgb(129, 129, 129);
+    .cards-passo{
+        width: 50px;
+        height: 80px;
+        border: 2px solid black;
     }
     .footer{
         height: 65px;
