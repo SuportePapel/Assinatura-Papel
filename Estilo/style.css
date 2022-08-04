@@ -83,6 +83,7 @@
         display: none;
         justify-content: space-evenly;
         flex-direction: column;
+        padding: 10px;
     }
     .messageDeCopie{
         color: rgb(184, 0, 0);
