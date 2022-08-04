@@ -96,6 +96,7 @@
         flex-wrap: nowrap;
         align-items: center;
         display: none;
+        background-color: white;
     }
     .textoUpAssinatura{ 
         display: none;
@@ -105,11 +106,8 @@
     }
     .messageDeCopie{
         color: rgb(184, 0, 0);
-        font-size: 18px;
-        font-family: 'Times New Roman', Times, serif;
-    }
-    .messageAssinatura{
-        margin: auto;
+        font-size: 21px;
+        font-family: fantasy;
     }
     .adicionarNome{
         color: red;
@@ -200,7 +198,7 @@
     }
     .footer{
         height: 65px;
-        background-color: darkgray;
+        background-color: #8cb0b0;
         justify-content: center;
         align-items: center;
         display: flex;
