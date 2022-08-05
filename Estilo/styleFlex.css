@@ -200,12 +200,12 @@
     }
     .message-passo-a-passo{
         color: black;
-        font-size: 35px;
+        font-size: 30px;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         font-weight: 600;
     }
     .cards-passo{
-        width: 90%;
+        width: 70%;
         height: auto;
         border: 2px solid black;
         border-radius:7px;
@@ -217,7 +217,7 @@
     li{
         color: white;
         padding: 15px;
-        font-size: 25px;
+        font-size: 20px;
         font-family:Verdana, Geneva, Tahoma, sans-serif;
     }
     .img-passo{
