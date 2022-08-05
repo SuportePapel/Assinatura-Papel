@@ -1,5 +1,6 @@
 let h2 = document.querySelector(".h2")
 let h1 = document.querySelector(".h1")
+let copieAssinatura = document.querySelector(".copieAssinatura")
 let form = document.querySelector(".form")
 let assinatura = document.querySelector(".assinatura")
 
@@ -45,6 +46,7 @@ function addramal (){
 function mostrarAssinatura (){
 
     assinatura.style.display = 'flex'
+    copieAssinatura.innerText = 'Copie a Assinatura abaixo !'
 
     addnome()
     addcargo()

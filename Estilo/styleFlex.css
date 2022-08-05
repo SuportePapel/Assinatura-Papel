@@ -105,6 +105,12 @@
     .button:hover{
         border: 2px solid white
     }
+    .copieAssinatura{
+        font-size: 20px;
+        font-family: fantasy, Arial, Helvetica, sans-serif;
+        color: black;
+        padding: 15px;
+    }
     .assinatura{
         padding: 5px;
         display: flex;
@@ -184,9 +190,8 @@
     .last-section{
         display: none;
         gap: 15px;
-        flex-direction: row;
+        flex-direction: column;
         flex-wrap: wrap;
-        
     }
     .cards-passo{
         width: 90%;
