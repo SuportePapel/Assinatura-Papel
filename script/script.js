@@ -1,6 +1,8 @@
 let h2 = document.querySelector(".h2")
+let h1 = document.querySelector(".h1")
 let form = document.querySelector(".form")
 let assinatura = document.querySelector(".assinatura")
+
 let section = document.querySelector(".section")
 let lastSection = document.querySelector(".last-section")
 
@@ -15,15 +17,13 @@ let adicionarCargo = document.querySelector("p[name = 'adicionarCargo']")
 let adicionarTelefone = document.querySelector("span[name = 'adicionarTelefone']")
 let adicionarRamal = document.querySelector("span[name = 'adicionarRamal']")
 
+
     form.addEventListener('submit', (event)=>{
         event.preventDefault()
-        addnome()
-        addcargo()
-        addtelefone()
-        addramal()
+
         mostrarAssinatura()
         ocultarForm()
-        mostraPassos()
+        
     })
 function addnome(){
     adicionarNome.innerHTML= inputName.value
@@ -43,12 +43,23 @@ function addramal (){
     inputRamal.value = ''
 }
 function mostrarAssinatura (){
+
     assinatura.style.display = 'flex'
+
+    addnome()
+    addcargo()
+    addtelefone()
+    addramal()
+    mostraPassos()
+    alteraH1()
 }
 function ocultarForm(){
     section.style.display= 'none'
     h2.style.display = 'none'
 }
 function mostraPassos(){
-    lastSection.style.display = 'grid'
+    lastSection.style.display = 'flex'
+}
+function alteraH1 (){
+    h1.innerHTML =  'Assnitatura / Passo a Passo'
 }
