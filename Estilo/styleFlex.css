@@ -36,6 +36,9 @@
         padding: 16px;
         flex: 1 0 auto;
     }
+    .mid-section{
+        display: none;
+    }
     .h2{
         text-align: center;
         padding: 10px;
@@ -108,7 +111,7 @@
     .copieAssinatura{
         font-size: 20px;
         font-family: fantasy, Arial, Helvetica, sans-serif;
-        color: black;
+        color: red;
         padding: 15px;
     }
     .assinatura{
@@ -192,6 +195,12 @@
         gap: 15px;
         flex-direction: column;
         flex-wrap: wrap;
+    }
+    .message-passo-a-passo{
+        color: black;
+        font-size: 35px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: 600;
     }
     .cards-passo{
         width: 90%;

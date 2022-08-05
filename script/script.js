@@ -6,6 +6,7 @@ let assinatura = document.querySelector(".assinatura")
 
 let section = document.querySelector(".section")
 let lastSection = document.querySelector(".last-section")
+let midsection = document.querySelector(".mid-section")
 
 let inputName = document.querySelector("input[name = 'name']")
 let inputCargo = document.querySelector("input[name = 'cargo']")
@@ -18,35 +19,38 @@ let adicionarCargo = document.querySelector("p[name = 'adicionarCargo']")
 let adicionarTelefone = document.querySelector("span[name = 'adicionarTelefone']")
 let adicionarRamal = document.querySelector("span[name = 'adicionarRamal']")
 
-
     form.addEventListener('submit', (event)=>{
         event.preventDefault()
-
-        mostrarAssinatura()
-        ocultarForm()
-        
+             addnome()
+             addcargo()
+             addtelefone()
+             addtelefone()
+             mostrarAssinatura()
+             ocultarForm()
+             mostraPassos()
+             alteraH1()
     })
 function addnome(){
     adicionarNome.innerHTML= inputName.value
-    inputName.value = ''
+    
 }
 function addcargo (){
     adicionarCargo.innerHTML = inputCargo.value
-    inputCargo.value = ''
+    
 }
 function addtelefone(){
     let  array = [`${inputTel.value[0]}`+`${inputTel.value[1]}`+ `${inputTel.value[2]}`+`${inputTel.value[3]}`+ `-`+`${inputTel.value[4]}`+`${inputTel.value[5]}`+`${inputTel.value[6]}`+`${inputTel.value[7]}`]
     adicionarTelefone.innerText = `${"Tel.: 55 11"} ${""} ${array}`
-    inputTel.value = ''
+    
 }
 function addramal (){
     adicionarRamal.innerHTML = `${"Ramal:"} ${""} ${inputRamal.value}`
-    inputRamal.value = ''
+    
 }
 function mostrarAssinatura (){
 
+    midsection.style.display = 'flex'
     assinatura.style.display = 'flex'
-    copieAssinatura.innerText = 'Copie a Assinatura abaixo !'
 
     addnome()
     addcargo()
@@ -65,3 +69,7 @@ function mostraPassos(){
 function alteraH1 (){
     h1.innerHTML =  'Assnitatura / Passo a Passo'
 }
+document.addEventListener('click', function(e) {
+    const el = e.target;
+  });
+  
