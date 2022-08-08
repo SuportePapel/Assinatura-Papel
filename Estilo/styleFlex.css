@@ -238,3 +238,8 @@
         width: auto;
     }
 }
+@media (max-width: 500px) {
+        .image-assinatura{
+            width: 150px;
+        }
+}
