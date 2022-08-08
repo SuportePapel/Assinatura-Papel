@@ -178,7 +178,6 @@
         align-items: flex-end;
     }
     .imagem-risco{
-        width: 200px;
         justify-content: flex-start;
         display: flex;
         max-width: 350px;
