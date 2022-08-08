@@ -128,7 +128,7 @@
         background-color: white;
     }
     .image-assinatura{
-        height: 150px;
+        height: 180px;
         float:left;
         margin-right: 10px;
         margin-bottom: auto;
@@ -243,7 +243,4 @@
             width: 150px;
             height: 180px;
         }
-}
-.div-image-assinatura{
-height:180px;
 }
