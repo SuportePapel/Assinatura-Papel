@@ -244,3 +244,9 @@
             height: 180px;
         }
 }
+@media (max-width:350px){
+    .image-assinatura{
+        width: 150px;
+        height: 180px;
+    }
+}
